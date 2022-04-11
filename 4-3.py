@@ -6,7 +6,7 @@ email = input('Введите email')
 sl1 = dict(name=name, email=email) #первый словарь
 print(sl1)
 n = int(input('Введите n'))
-lst1 = list(range(1, n+1)) #ключи для 2-го словаря
+lst1 = list(range(0, n+1)) #ключи для 2-го словаря
 print(lst1)
 sl2 = dict(lst1=sl1) #2 словарь
 print(sl2)
