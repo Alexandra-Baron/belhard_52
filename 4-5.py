@@ -1,7 +1,8 @@
-#Даны два списка чисел, найти сумму общих элементов (без дублей) этих списков
-first_list = [1, 3, 5, 8]
-second_list = [3, 4, 6, 8]
+# Дан список чисел, сказать сколько чисел в нем повторяется
+first_list = [1, 3, 4, 5, 5, 7, 7, 9, 9, 2, 7, 7]
+number_list = len(first_list) #количество эл-в в списке
 set_1 = set(first_list)
-set_2 = set(second_list)
-result = sum(set.intersection(set_1,set_2))
-print(result)
+unique = set.difference(set_1) #уникальные значения
+number_set = len(unique) #кол-во уникальных значений
+final = number_list-number_set
+print(final)
